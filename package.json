@@ -1,0 +1,18 @@
+{
+  "name": "marfeel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Adrien REDON <redon.adrien@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "PORT=1337 node app.js",
+    "test": "jasmine"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "jasmine": "^3.2.0",
+    "jasmine-es6": "^0.4.3"
+  }
+}

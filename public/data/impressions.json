@@ -1,0 +1,11 @@
+{
+  "variation": "decrease",
+  "tablet": {
+    "value": 20000000,
+    "color": "#70C8E4"
+  },
+  "smartphone": {
+    "value": 30000000,
+    "color": "#315365"
+  }
+}
