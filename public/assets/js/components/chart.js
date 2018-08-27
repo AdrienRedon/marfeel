@@ -20,7 +20,7 @@ export default class extends HTMLElement {
     const circumference = 2 * Math.PI * radius;
     const progress = value / 100;
     const dashoffset = circumference * (1 - progress);
-     return {
+    return {
       dashoffset,
       circumference,
     };
