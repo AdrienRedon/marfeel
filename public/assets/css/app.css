@@ -2,6 +2,14 @@ html {
   font-family: sans-serif;
 }
 
+html, body {
+  box-sizing: border-box;
+}
+
+*, *:after, *:before {
+  box-sizing: inherit;
+}
+
 p {
   margin: 0;
 }
@@ -11,29 +19,56 @@ p {
   justify-content: space-around;
 }
 
-.chart-title, .chart-total {
-  text-align: center;
-  font-size: 1.6rem;
+.chart--circle {
+  position: absolute;
+  height: 250px;
+  width: 250px;
 }
 
-.chart-title {
+.chart--circle {
+  margin: 0 30px;
+}
+
+.chart--circle__meter, .chart--circle__value {
+  transform: rotate(-90deg);
+}
+
+.chart--title, .chart--total {
+  text-align: center;
+}
+
+.chart--title {
+  padding-top: 90px;;
   text-transform: uppercase;
   font-weight: 300;
+  font-size: 1.5rem;
+  color: #AAA;
+}
+
+.chart--total {
+  padding-bottom: 110px;
+  font-size: 1.8rem;
 }
 
 .details {
   display: flex;
   justify-content: space-between;
-  min-width: 250px;
+  min-width: 320px;
   padding: 10px;
 
   border-bottom: 1px solid #E4E4E4; 
 }
 
-.details .tablet {
+.details--tablet {
   text-align: left;
 }
 
-.details .smartphone {
+.details--smartphone {
   text-align: right;
+}
+
+.details--value {
+  display: inline-block;
+  padding-left: 10px;
+  color: #AAA;
 }
