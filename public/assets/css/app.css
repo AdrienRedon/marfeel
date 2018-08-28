@@ -19,10 +19,14 @@ p {
   justify-content: space-around;
 }
 
-.chart--circle {
+.chart--circle, .chart--variation {
   position: absolute;
   height: 250px;
   width: 250px;
+}
+
+.chart--variation {
+  margin: 50px 60px;
 }
 
 .chart--circle {

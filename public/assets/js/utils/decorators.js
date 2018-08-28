@@ -19,4 +19,4 @@ function number(value, decimal) {
 
 export {
   number,
-}
+};

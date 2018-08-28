@@ -1,6 +1,6 @@
 import { number } from '../utils/decorators.js';
 
-export default class extends HTMLElement {
+export class Chart extends HTMLElement {
 
   get dataType() {
     if (!this.hasAttribute('data-type')) {
@@ -43,6 +43,7 @@ export default class extends HTMLElement {
               <circle class="chart--circle__value" cx="-200" cy="200" r="195" stroke-width="10" fill="none" style="stroke: ${data.smartphone.color}; stroke-dashoffset: ${this.getProgressCircle(smartphonePercent).dashoffset}; stroke-dasharray: ${this.getProgressCircle(smartphonePercent).circumference}" />
             </svg>
           </div>
+          <app-variation-curve class="chart--variation" color="${data.tablet.color}" ${data.variation === 'decrease' ? 'inverted' : ''}></app-variation-curve>
           <p class="chart--title">${this.dataType}</p>
           <p class="chart--total">${number(total) + this.dataSuffix}</p>
         </div>
